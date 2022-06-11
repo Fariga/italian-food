@@ -1,0 +1,19 @@
+.link {
+  padding: 28px 86px;
+  background-color: $color-text-4;
+  font-size: 23px;
+  line-height: 1;
+  color: $main-color-text;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 45px;
+
+  @media (max-width: 1024px) {
+    padding: 28px 60px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+}

@@ -1,0 +1,47 @@
+.main-nav {
+  margin: auto 30px auto auto;
+
+  @media (max-width: 767px) {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.main-nav__btn {
+  padding: 0;
+  border: 0;
+  background-color: $main-color-text;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  display: none;
+
+  @media (max-width: 767px) {
+    &--close {
+      .main-nav--open & {  /*добавь класс*/
+        display: block;  /*покажет меню*/
+      }
+    }
+
+    &--open {
+      display: block;
+
+      .main-nav--open & {  /*добавь класс*/
+        display: none;  /*спрячь меню*/
+      }
+    }
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+

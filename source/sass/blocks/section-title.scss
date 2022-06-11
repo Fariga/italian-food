@@ -1,0 +1,11 @@
+.section-title {
+  font-family: reey;
+  font-size: 75px;
+  line-height: 1;
+  font-weight: 400;
+
+  @media (max-width: 767px) {
+    font-size: 30px;
+  }
+}
+
