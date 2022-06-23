@@ -4,11 +4,9 @@
   position: relative;
 }
 
-
-
 .form__button {
   position: absolute;
-  padding: 10px 40px;
+  padding: 8px 38px;
   background-color: #54524f;
   color: #fff;
   font-weight: 600;
@@ -20,14 +18,29 @@
   font-size: 25px;
   z-index: 10;
   line-height: 1;
+  border: 2px solid #54524f;
 
-  @media (max-width: 767px) {
+  &:hover {
+    color: $color-text-5;
+    background-color: $color-text-12;
+    border-color: red green yellow blue;
+  }
+
+  &:active {
+    background-color: $color-text-12;
+    color: $color-text-1;
+  }
+
+  @media (max-width: $size-screen-tablet) {
+    font-size: 22px;
+  }
+
+  @media (max-width: $size-screen-mobile) {
     font-size: 17px;
     position: static;
     padding: 15px 36px;
   }
 }
-
 
 .form__input {
   padding: 15px 200px 15px 36px;
@@ -41,7 +54,11 @@
   width: 100%;
   border: none;
 
-  @media (max-width: 767px) {
+  @media (max-width: $size-screen-tablet) {
+    font-size: 22px;
+  }
+
+  @media (max-width: $size-screen-mobile) {
     font-size: 17px;
     margin-bottom: 30px;
   }

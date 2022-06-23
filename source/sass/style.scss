@@ -1,8 +1,11 @@
-@import "normalize.scss";
 @import "variables.scss";
-@import "mixins.scss";
+@import "normalize.scss";
 @import "fonts.scss";
+@import "global.scss";
 @import "visually-hidden.scss";
+@import "site.scss";
+@import "btn.scss";
+@import "blocks/page-main.scss";
 @import "blocks/promo.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-header.scss";
@@ -20,76 +23,4 @@
 @import "blocks/main-list.scss";
 @import "blocks/social.scss";
 @import "blocks/list__link.scss";
-
-
-html {
-  box-sizing: border-box;
-  height: 100%;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
-  font-family: $main-font;
-  font-size: 29px;
-  line-height: 35px;
-  font-weight: 400;
-  background-color: $main-color-text-hover;
-
-  @media (max-width: 767px) {
-    font-size: 20px;
-    line-height: 23px;
-  }
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style-type: none;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-p,
-blockquote {
-  margin: 0;
-}
-
-button {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-address {
-  font-style: normal;
-}
-
-fieldset {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-.wrapper {
-  max-width: 1330px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
-  position: relative;
-}
+@import "button-up.scss";

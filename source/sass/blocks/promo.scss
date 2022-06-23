@@ -1,15 +1,13 @@
-$header-height: 135px;
 
 .promo {
   background-image: url("/img/header background.jpg");
   background-repeat: no-repeat;
-  margin-top: -$header-height;
   padding-top: 250px;
   padding-bottom: 43px;
   background-size: cover;
 
-  @media (max-width: 767px) {
-    padding-top: 570px;
+  @media (max-width: $size-screen-tablet) {
+    padding-top: 100px;
   }
 }
 
@@ -23,25 +21,33 @@ $header-height: 135px;
                        "link foto"
                        "text foto";
 
-  @media (max-width: 767px) {
+  @media (max-width: $size-screen-mobile) {
     display: block;
-    padding-left: 10px;
+    padding-left: 0px;
     text-align: center;
   }
 }
 
 .promo__title {
-  font-family: reey;
+  font-family: $font-1;
   font-size: 92px;
   line-height: 1.5;
-  margin-top: 110px;
+  margin: 95px 0;
   grid-area: title;
-  margin-bottom: 110px;
-  margin-right: -50px;
+  margin-bottom: 95px;
   color: $main-color-text;
 
-  @media (max-width: 767px) {
-    font-size: 62px;
+  @media (max-width: 1329px) {
+    margin: 7.3vw 0;
+  }
+
+  @media (max-width: $size-screen-tablet) {
+    font-size: 50px;
+    line-height: 1;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    font-size: 40px;
     margin: 20px 0;
   }
 }
@@ -53,18 +59,24 @@ $header-height: 135px;
   text-transform: uppercase;
   font-style: italic;
   grid-area: subtitle;
-  min-height: 50px;
+  min-height: 2em;
   margin-bottom: 35px;
   color: $main-color-text;
 
-  @media (max-width: 767px) {
+  @media (max-width: $size-screen-tablet) {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: $size-screen-mobile) {
     font-size: 17px;
     margin-bottom: 20px;
   }
 }
 
 .promo__link {
-  padding: 11px 37px;
+  padding: 11px 20px;
+  min-width: 218px;
   background-color: $main-color-text;
   opacity: 0.9;
   border-radius: 20px;
@@ -79,21 +91,40 @@ $header-height: 135px;
   text-align: center;
   display: inline-block;
 
-  @media (max-width: 767px) {
+  &:hover {
+    background: linear-gradient(#e66465, #9198e5);
+    color: $main-color-text;
+  }
+
+  &:active {
+    background-color: $color-text-12;
+    color: $color-text-1;
+  }
+
+  @media (max-width: $size-screen-tablet) {
+    font-size: 20px;
+  }
+
+  @media (max-width: $size-screen-mobile) {
     font-size: 16px;
-    padding: 15px 30px;
+    padding: 15px 20px;
     margin-bottom: 20px;
   }
 }
 
 .promo__description {
   font-size: 21px;
-  line-height: 25px;
+  line-height: 1.19;
   font-style: italic;
   grid-area: text;
   color: $main-color-text;
 
-  @media (max-width: 767px) {
+  @media (max-width: $size-screen-tablet) {
+    font-size: 17px;
+    align-self: center;
+  }
+
+  @media (max-width: $size-screen-mobile) {
     font-size: 14px;
   }
 }
@@ -101,11 +132,11 @@ $header-height: 135px;
 .promo__img {
   grid-area: foto;
 
-  @media (max-width: 1024px) {
+  @media (max-width: $size-screen-tablet) {
     align-self: center;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $size-screen-mobile) {
     max-width: 50vw;
     margin: 0 auto;
   }
@@ -121,7 +152,7 @@ $header-height: 135px;
   right: -30px;
   bottom: -174px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: $size-screen-tablet) {
     display: none;
   }
 }

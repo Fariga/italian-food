@@ -1,15 +1,15 @@
 .page-footer {
   background-color: $main-color-text;
-}
 
-.page-footer__wrapper {
   padding: 337px 0;
 
-  @media (max-width: 1024px) {
+  @media (max-width: $size-screen-tablet) {
     padding: 100px 0;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $size-screen-mobile) {
     padding: 50px 0;
   }
 }
+
+

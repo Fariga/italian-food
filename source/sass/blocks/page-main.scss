@@ -1,0 +1,10 @@
+$header-height: 250px;
+
+
+.page-main {
+  margin-top: -$header-height;
+
+  @media (max-width: $size-screen-tablet) {
+    margin-top: 0;
+  }
+}

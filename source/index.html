@@ -12,43 +12,63 @@
   <link rel="stylesheet" href="/css/styles.min.css">
 </head>
 <body>
+  <div class="site">
   <header class="page-header wrapper">
     <div class="page-header__wrapper">
       <h1 class="page-header__title">
-        <a href="#" class="promo__logo">
+        <a href="#" class="page-header__logo">
           <img src="/img/icon-logo.png">
         </a>
       </h1>
-      <nav class="main-nav main-nav--open">
-        <button class="main-nav__btn main-nav__btn--open" type="button">
-          <div class="main-nav__icon-menu">
-            <img src="/img/icon-menu-open.svg" alt="button open" width="20" height="14">
-          </div>
+      <nav class="main-nav">
+        <button class="main-nav__btn btn" type="button">
+          <span class="btn__line btn__line--1"></span>
+          <span class="btn__line btn__line--2"></span>
+          <span class="btn__line btn__line--3"></span>
         </button>
-        <button class="main-nav__btn main-nav__btn--close" type="button">
-          <div class="main-nav__icon-menu">
-            <img src="/img/icon-menu-close.svg" alt="button close" width="20" height="14">
+        <div class="main-nav__container">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Home</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Menu</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Our Story</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Contact Us</a>
+            </li>
+          </ul>
+          <div class="page-header__search-wrapper">
+            <input class="page-header__field" type="text" name="search">
           </div>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Home</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Menu</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Our Story</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Contact Us</a>
-          </li>
-        </ul>
+          <ul class="social social--top">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img src="/img/icon-instagram.png" alt="icon-instagram">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img src="/img/icon-facebook.png" alt="icon-facebook">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img src="/img/icon-twitter.png" alt="icon-twitter">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img src="/img/icon-whatsApp.png" alt="icon-whatsApp">
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
-    <div class="page-header__search-wrapper">
-      <input class="page-header__field" type="text" name="search">
     </div>
-  </div>
   </header>
 
   <main class="page-main">
@@ -78,36 +98,42 @@
         </p>
         <ul class="catalog-pasta__list">
             <li class="catalog-pasta__menu-item">
-              <div class="catalog-pasta__img">
-                <img src="img/pasta-tomato-proposition.png" alt="pasta with tomato">
-              </div>
-              <h3 class="catalog-pasta__menu-title">
-                Lorem ipsum
-              </h3>
-              <a href="#" class="catalog-pasta__description">
-                Lorem ipsum dolor sit amet, consectetur  adipisicing...
+              <a href="#" class="catalog-pasta__link">
+                <div class="catalog-pasta__img">
+                  <img src="img/pasta-tomato-proposition.png" alt="pasta with tomato">
+                </div>
+                <h3 class="catalog-pasta__menu-title">
+                  Lorem ipsum
+                </h3>
+                <p class="catalog-pasta__description">
+                  Lorem ipsum dolor sit amet, consectetur  adipisicing...
+                </p>
               </a>
             </li>
             <li class="catalog-pasta__menu-item">
-              <div class="catalog-pasta__img">
-                <img src="img/pasta-cheese-proposition.png" alt="pasta with cheese">
-              </div>
-              <h3 class="catalog-pasta__menu-title">
-                Lorem ipsum
-              </h3>
-              <a href="#" class="catalog-pasta__description">
-                Lorem ipsum dolor sit amet, consectetur  adipisicing...
+              <a href="#" class="catalog-pasta__link">
+                <div class="catalog-pasta__img">
+                  <img src="img/pasta-cheese-proposition.png" alt="pasta with cheese">
+                </div>
+                <h3 class="catalog-pasta__menu-title">
+                  Lorem ipsum
+                </h3>
+                <p class="catalog-pasta__description">
+                  Lorem ipsum dolor sit amet, consectetur  adipisicing...
+                </p>
               </a>
             </li>
             <li class="catalog-pasta__menu-item">
-              <div class="catalog-pasta__img">
-                <img src="img/pasta-pesto-proposition.png" alt="pasta with pesto">
-              </div>
-              <h3 class="catalog-pasta__menu-title">
-                Lorem ipsum
-              </h3>
-              <a href="a" class="catalog-pasta__description">
-                Lorem ipsum dolor sit amet, consectetur  adipisicing...
+              <a href="#" class="catalog-pasta__link">
+                <div class="catalog-pasta__img">
+                  <img src="img/pasta-pesto-proposition.png" alt="pasta with pesto">
+                </div>
+                <h3 class="catalog-pasta__menu-title">
+                  Lorem ipsum
+                </h3>
+                <p class="catalog-pasta__description">
+                  Lorem ipsum dolor sit amet, consectetur  adipisicing...
+                </p>
               </a>
             </li>
         </ul>
@@ -143,34 +169,36 @@
     <section class="proposition">
       <div class="wrapper">
         <h2 class="visually-hidden">promo and discount proposition</h2>
-          <div class="proposition__block proposition__block--left">
-            <h3 class="proposition__title">
-              Discount up to 50% All Excursions
-            </h3>
-            <div class="proposition__img">
-              <img src="img/pasta-tomato-big.png" alt="pasta with tomato">
-            </div>
-            <div class="proposition__description">
-              <p class="proposition__text">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-              </p>
-              <a class="link" href="#">read more</a>
-            </div>
-          </div>
-          <div class="proposition__block proposition__block--right">
-            <h3 class="proposition__title">
-              Discount up to 50% All Excursions
-            </h3>
-            <div class="proposition__img">
-              <img src="img/pasta-cheese-big.png" alt="pasta with tomato">
-            </div>
-            <div class="proposition__description">
-              <p class="proposition__text">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-              </p>
-              <a class="link" href="#">read more</a>
-            </div>
-          </div>
+          <ul>
+            <li class="proposition__block proposition__block--left">
+              <h3 class="proposition__title">
+                Discount up to 50% All Excursions
+              </h3>
+              <div class="proposition__img">
+                <img src="img/pasta-tomato-big.png" alt="pasta with tomato">
+              </div>
+              <div class="proposition__description">
+                <p class="proposition__text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </p>
+                <a class="link" href="#">read more</a>
+              </div>
+            </li>
+            <li class="proposition__block proposition__block--right">
+              <h3 class="proposition__title">
+                Discount up to 50% All Excursions
+              </h3>
+              <div class="proposition__img">
+                <img src="img/pasta-cheese-big.png" alt="pasta with tomato">
+              </div>
+              <div class="proposition__description">
+                <p class="proposition__text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </p>
+                <a class="link" href="#">read more</a>
+              </div>
+            </li>
+          </ul>
         <div class="proposition__decoration">
           <img src="/img/leaf-middle.png" alt="leaf">
         </div>
@@ -238,8 +266,7 @@
   </main>
   <footer class="page-footer">
     <div class="wrapper">
-      <div class="page-footer__wrapper">
-        <ul class="main-list">
+      <ul class="main-list">
           <li class="main-list__block">
             <h3 class="main-list__title">About</h3>
             <ul class="sublist">
@@ -300,9 +327,9 @@
           </li>
           <li class="main-list__block main-list__block--add">
             <h3 class="main-list__title">Title Here</h3>
-            <a class="main-list__link list__link list__link--f" href="#">
+            <p class="main-list__link list__link list__link--f">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim.
-            </a>
+            </p>
             <ul class="social">
               <li class="social__item">
                 <a class="social__link" href="#">
@@ -326,10 +353,17 @@
               </li>
             </ul>
           </li>
-        </ul>
-
-      </div>
+      </ul>
     </div>
   </footer>
+  <button class="button-up">
+    <span class="visually-hidden">button up</span>
+  </button>
+  <script>
+    const btn = document.querySelector('.main-nav__btn');
+    const menu = document.querySelector('.main-nav');
+
+    btn.addEventListener('click', () => menu.classList.toggle('main-nav--open'));
+  </script>
 </body>
 </html>

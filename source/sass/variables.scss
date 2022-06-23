@@ -1,4 +1,6 @@
-$main-font: "Open Sans", "Arial", sans-serif;
+$main-font: "Open Sans", "Arial", "Helvetica", sans-serif;
+$font-1: "Reey", "Arial", "Helvetica", sans-serif;
+$font-2: "Montserrat", "Arial", "Helvetica", sans-serif;
 $main-color-text: rgb(255, 255, 255);
 $main-color-text-hover: rgb(102, 102, 102);
 $main-color-text-down: rgb(178, 178, 178);
@@ -6,9 +8,15 @@ $color-text-1: rgb(46, 48, 52);
 $color-text-2: rgb(34, 35, 40);
 $color-text-3: rgb(47, 49, 53);
 $color-text-4: rgb(52, 52, 52);
-$color-text-5: rgb(39, 41, 44); /* color for hover */
+$color-text-5: rgb(39, 41, 44);
 $color-text-6: rgb(248, 246, 241);
 $color-text-7: rgb(57, 57, 57);
 $color-text-8: rgb(51, 61, 66);
 $color-text-9: rgb(63, 63, 63);
 $color-text-10: rgb(84, 82, 79);
+$color-text-11: rgba(255, 255, 255, 0.9);
+$color-text-12: rgb(20, 163, 70);
+$color-background: rgba(0, 0, 0, 0.7);
+
+$size-screen-tablet: 1024px;
+$size-screen-mobile: 767px;
